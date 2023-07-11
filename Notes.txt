@@ -1,0 +1,534 @@
+BRAZIL   -      ID 1
+
+Cidades:
+
+1.Rio de Janeiro
+country_id = 1
+city_name = Rio de Janeiro
+latitude = -22.9035
+longitude = -43.2096
+rating = 
+info =
+
+2.Salvador
+country_id = 1
+city_name = Salvador
+latitude = -12.9704
+longitude = -38.5124
+rating = 
+info = 
+
+3.Florianopolis
+country_id = 1
+city_name = Florianopolis
+latitude = -27.5969
+longitude = -48.5495
+rating = 
+info =
+
+4.Manaus
+country_id = 1
+city_name = Manaus
+latitude = -3.1072 
+longitude = -60.0261
+rating = 
+info = 
+
+5.São Paulo
+country_id = 1
+city_name = São Paulo
+latitude = -23.5489
+longitude = -46.6388
+rating =
+info =
+
+Russia    -      ID 3
+
+Cidades:
+
+6.Sochi
+country_id = 3
+city_name = Sochi
+latitude = 43.6
+longitude = 39.7167
+rating =
+info =
+
+7.Saint Petersburg
+country_id = 3
+city_name = Petersburg
+latitude = 59.9339
+longitude = 30.3061
+rating =
+info =
+
+8.Yekaterinburg
+country_id = 3
+city_name = Yekaterinburg
+latitude = 56.7858
+longitude = 60.5841
+rating =
+info =
+
+9.Moscow
+country_id = 3
+city_name = Moscow
+latitude = 55.7508
+longitude = 37.6172
+rating =
+info =
+
+10.Nizhny Novgorod
+country_id = 3
+city_name = Nizhny Novgorod
+latitude = 40
+longitude = 32
+rating =
+info =
+
+United States -  ID 4
+
+Cidades:
+
+11.New York
+country_id = 4
+city_name = New York
+latitude = 40.6643
+longitude = -73.9385
+rating =
+info =
+
+12.San Francisco
+country_id = 4
+city_name = San Francisco
+latitude = 37.7272
+longitude = -123.032
+rating =
+info =
+
+13.Las Vegas
+country_id = 4
+city_name = Las Vegas
+latitude = 36.2277
+longitude = -115.264
+rating =
+info =
+
+14.Miami
+country_id = 4
+city_name = Miami
+latitude = 25.7751
+longitude = -80.2105
+rating =
+info =
+
+15.Orlando
+country_id = 4
+city_name = Orlando
+latitude = 28.4159
+longitude = -81.2988
+rating =
+info =
+
+Mexico     -     ID 7
+
+Cidades:
+
+16.Cancun
+country_id = 7
+city_name = Cancun
+latitude = 21.1743
+longitude = -86.8466
+rating =
+info =
+
+17.Mexico City
+country_id = 7
+city_name = Mexico City
+latitude = 19.4978
+longitude = -99.1269
+rating =
+info =
+
+18.Oaxaca de Juarez
+country_id = 7
+city_name = Oaxaca de Juárez
+latitude = 17.0669
+longitude = -96.7203
+rating =
+info =
+
+19.Veracruz
+country_id = 7
+city_name = Veracruz
+latitude = -6.0442
+longitude = -35.4283
+rating =
+info =
+
+20.Taxco de Alarcón
+country_id = 7
+city_name = Taxco de Alarcón
+latitude = 18.5564
+longitude = -99.605
+rating =
+info =
+
+China      -     ID 8
+
+Cidades:
+
+21.Beijing
+country_id = 8
+city_name = Beijing
+latitude = 39.9035
+longitude = 116.388
+rating =
+info =
+
+22.Shanghai
+country_id = 8
+city_name = Shanghai
+latitude = 31.2323
+longitude = 121.469
+rating =
+info =
+
+23.Harbin
+country_id = 8
+city_name = Harbin
+latitude = 45.6947
+longitude = 126.632
+rating =
+info =
+
+24.Xi'an
+country_id = 8
+city_name = Xi'an
+latitude = 34.1845
+longitude = 108.947
+rating =
+info =
+
+25.Suzhou
+country_id = 8
+city_name = Suzhou
+latitude = 31.3041
+longitude = 120.5954
+rating =
+info =
+
+
+Japan      -     ID 9 
+
+Cidades:
+
+26.Tokyo
+country_id = 9
+city_name = Tokyo
+latitude = 35.6894
+longitude = 139.692
+rating =
+info =
+
+27.Kyoto
+country_id = 9
+city_name = Kyoto
+latitude = 35.0117
+longitude = 135.768
+rating =
+info =
+
+28.Osaka
+country_id = 9
+city_name = Osaka
+latitude = 34.6936
+longitude = 135.502
+rating =
+info =
+
+29.Yokohama
+country_id = 9
+city_name = Yokohama
+latitude = 35.4333
+longitude = 139.633
+rating =
+info =
+
+30.Hiroshima
+country_id = 9
+city_name = Hiroshima
+latitude = 35.6894
+longitude = 139.692
+rating =
+info =
+
+
+Canada     -     ID 10
+
+Cidades:
+
+31.Ottawa
+country_id = 10
+city_name = Ottawa
+latitude = 45.4208
+longitude = -75.69
+rating =
+info =
+
+32.Montreal
+country_id = 10
+city_name = Montreal
+latitude = -22.9035
+longitude = -43.2096
+rating =
+info =
+
+33.Quebec
+country_id = 10
+city_name = Quebec
+latitude = 46.8127
+longitude = -71.2199
+rating =
+info =
+
+34.Vancouver
+country_id = 10
+city_name = Vancouver
+latitude = 49.3196
+longitude = -123.068
+rating =
+info =
+
+35.Toronto
+country_id = 10
+city_name = Toronto
+latitude = 43.7166
+longitude = -79.3407
+rating =
+info =
+
+France     -     ID 11
+
+Cidades:
+
+36.Biarritz
+country_id = 11
+city_name = Biarritz
+latitude = 43.4806
+longitude = -1.5667
+rating =
+info =
+
+37.Lyon
+country_id = 11
+city_name = Lyon
+latitude = 45.7589
+longitude = 4.8414
+rating =
+info =
+
+38.Paris
+country_id = 11
+city_name = Paris
+latitude = 48.8032
+longitude = 2.3511
+rating =
+info =
+
+39.Carcassonne
+country_id = 11
+city_name = Carcassonne
+latitude = 43.2119
+longitude = 2.3532
+rating = 
+info =
+
+40.Nantes
+country_id = 11
+city_name = Nantes
+latitude = 47.2188
+longitude = -1.55358
+rating =
+info =
+
+Spain      -     ID 12
+
+Cidades:
+
+41.Madrid
+country_id = 12
+city_name = Madrid
+latitude = 40.4167
+longitude = -3.7032
+rating =
+info =
+
+42.Barcelona
+country_id = 12
+city_name = Barcelona
+latitude = 41.3902
+longitude = 2.1540
+rating =
+info =
+
+43.Seville
+country_id = 12
+city_name = Seville
+latitude = 37.4195
+longitude = -5.8945
+rating =
+info =
+
+44.Málaga
+country_id = 12
+city_name = Málaga
+latitude = 36.7196
+longitude = -4.4200
+rating =
+info =
+
+45.Valencia
+country_id = 12
+city_name = Valencia
+latitude = 39.4702
+longitude = -0.3768
+rating =
+info =
+
+
+Italy      -     ID 13
+
+Cidades:
+
+46.Rome
+country_id = 13
+city_name = Rome
+latitude = 41.8905
+longitude = 12.4942
+rating =
+info =
+
+47.Florence
+country_id = 13
+city_name = Florence
+latitude = 43.7687
+longitude = 11.2569
+rating =
+info =
+
+48.Sienna
+country_id = 13
+city_name = Sienna
+latitude = 43.3187
+longitude = 11.3305
+rating =
+info =
+
+49.Venice
+country_id = 13
+city_name = Venice
+latitude = 45.4343
+longitude = 12.3388
+rating =
+info =
+
+50.Naples
+country_id = 13
+city_name = Naples
+latitude = 40.8401
+longitude = 14.2516
+rating =
+info =
+
+United Kingdom - ID 14
+
+Cidades:
+
+51.London
+country_id = 14
+city_name = London
+latitude = 51.5072
+longitude = -0.1275
+rating =
+info =
+
+52.Edinburgh
+country_id = 14
+city_name = Edinburgh
+latitude = 55.9494
+longitude = -3.1602
+rating =
+info =
+
+53.Belfast
+country_id = 14
+city_name = Belfast
+latitude = 54.5939
+longitude = -5.9294
+rating =
+info =
+
+54.Liverpool
+country_id = 14
+city_name = Liverpool
+latitude = 53.4000
+longitude = -2.9830
+rating =
+info =
+
+55.Manchester
+country_id = 14
+city_name = Manchester
+latitude = 53.4839
+longitude = -2.2446
+rating =
+info =
+
+Germany     -    ID 15
+
+Cidades:
+
+56.Berlin
+country_id = 15
+city_name = Berlin
+latitude = 52.5186
+longitude = 13.4081
+rating =
+info =
+
+57.Munich
+country_id = 15
+city_name = Munich
+latitude = 48.1369
+longitude = 11.5753
+rating =
+info =
+
+58.Heidelberg
+country_id = 15
+city_name = Heidelberg
+latitude = 49.4122
+longitude = 8.7100
+rating =
+info =
+
+59.Nuremberg
+country_id = 15
+city_name = Nuremberg
+latitude = 49.4528
+longitude = 11.0778
+rating =
+info =
+
+60.Hamburg
+country_id = 15
+city_name = Hamburg
+latitude = 53.5506
+longitude = 9.99333
+rating =
+info =
+
+12 ITEMS
+
+
