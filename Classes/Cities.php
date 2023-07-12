@@ -46,5 +46,10 @@ Class City
         }
         return $result;
     }
+    public static function getCountryName($db)
+    {
+    $result = $db->instance->query("SELECT countries.country_name FROM cities AS cities JOIN countries AS countries ON cities.country_id = countries.country_id");
+    return $result;
+    }
 }
 ?>

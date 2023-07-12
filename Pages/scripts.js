@@ -1,0 +1,1 @@
+// fazer uma função com solicitação ajax para avaliar a cidade, retornar botões de 1 a 5, que por fim crie uma row da review no DB
