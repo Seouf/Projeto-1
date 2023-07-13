@@ -38,12 +38,6 @@
     <input type="password" id="passworduserinput" name="password" autocomplete="current-password" required><br>
     <input type="submit" value="Log in">
   </form>
- <?php  
- // referência autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values 
- // referência doctype HTML: https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode
- // referência request method: https://cursos.alura.com.br/forum/topico-uso-do-_server-request_method-251356
-
- ?>
 </body>
 </html>
 

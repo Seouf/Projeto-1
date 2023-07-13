@@ -1,0 +1,31 @@
+#main-content{
+    height:100%;
+    margin:auto;
+    width: 80%;
+}
+
+#side-bar{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+#content{
+    height:100%;
+    width:79%;
+    float: left;
+}
+
+.cities{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+ul{
+    list-style-type: none;
+}

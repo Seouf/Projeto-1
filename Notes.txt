@@ -2,533 +2,529 @@ BRAZIL   -      ID 1
 
 Cidades:
 
-1.Rio de Janeiro
+1.Rio de Janeiro -- ID 2 OK
 country_id = 1
 city_name = Rio de Janeiro
 latitude = -22.9035
 longitude = -43.2096
-rating = 
-info =
+rating = 4.5
+info = A city known for its stunning beaches, vibrant Carnival celebrations, and iconic landmarks like Christ the Redeemer statue.
 
-2.Salvador
+2.Salvador  -- ID 3 OK
 country_id = 1
 city_name = Salvador
 latitude = -12.9704
 longitude = -38.5124
-rating = 
-info = 
+rating = 4.0
+info = A city rich in Afro-Brazilian culture, offering historic sites, colorful colonial architecture, and lively festivals.
 
-3.Florianopolis
+3.Florianopolis -- ID 4 OK
 country_id = 1
 city_name = Florianopolis
 latitude = -27.5969
 longitude = -48.5495
-rating = 
-info =
+rating = 4.0
+info = A city famous for its breathtaking beaches, surfing spots, and nature trails, making it a popular destination for outdoor enthusiasts
 
-4.Manaus
+4.Manaus -- ID 5 OK
 country_id = 1
 city_name = Manaus
 latitude = -3.1072 
 longitude = -60.0261
-rating = 
-info = 
+rating = 3.5
+info = A city situated in the heart of the Amazon rainforest, it offers unique opportunities to explore the Amazon River and the surrounding wildlife. 
 
-5.São Paulo
+5.São Paulo -- ID 6 OK
 country_id = 1
 city_name = São Paulo
 latitude = -23.5489
 longitude = -46.6388
-rating =
-info =
+rating = 4.0
+info = Brazil's largest city, renowned for its vibrant cultural scene, diverse cuisine, and bustling nightlife.
 
 Russia    -      ID 3
 
 Cidades:
 
-6.Sochi
+6.Sochi -- ID 7 OK
 country_id = 3
 city_name = Sochi
 latitude = 43.6
 longitude = 39.7167
-rating =
-info =
+rating = 4.0
+info =  A resort city on the Black Sea coast, known for its beautiful beaches, skiing opportunities in the nearby Caucasus Mountains, and the host city of the 2014 Winter Olympics.
 
-7.Saint Petersburg
+7.Saint Petersburg -- ID 8 OK
 country_id = 3
 city_name = Petersburg
 latitude = 59.9339
 longitude = 30.3061
-rating =
-info =
+rating = 5.0
+info = A cultural gem with its magnificent palaces, world-class museums such as the Hermitage, and grandeur of the historic city center.
 
-8.Yekaterinburg
+8.Yekaterinburg -- ID 9 OK
 country_id = 3
 city_name = Yekaterinburg
 latitude = 56.7858
 longitude = 60.5841
-rating =
-info =
+rating = 3.5
+info = A city which offers a mix of history and modernity, with attractions like the Church on the Blood and the vibrant city center.
 
-9.Moscow
+9.Moscow -- ID 10 OK
 country_id = 3
 city_name = Moscow
 latitude = 55.7508
 longitude = 37.6172
-rating =
-info =
+rating = 5.0
+info = The capital city showcasing impressive landmarks like the Red Square, St. Basil's Cathedral, and the Kremlin, along with renowned museums and vibrant nightlife.
 
-10.Nizhny Novgorod
+10.Nizhny Novgorod -- ID 11 OK
 country_id = 3
 city_name = Nizhny Novgorod
 latitude = 40
 longitude = 32
-rating =
-info =
+rating = 3.5
+info = A city known for its historic fortresses, charming old town, and stunning views from the Kremlin.
 
 United States -  ID 4
 
 Cidades:
 
-11.New York
+11.New York -- ID 12 OK
 country_id = 4
 city_name = New York
 latitude = 40.6643
 longitude = -73.9385
-rating =
-info =
+rating = 5.0
+info = A bustling metropolis with iconic sights such as Times Square, Central Park, Statue of Liberty, and world-class museums, theaters, and restaurants.
 
-12.San Francisco
+12.San Francisco -- ID 13 OK
 country_id = 4
 city_name = San Francisco
 latitude = 37.7272
-longitude = -123.032
-rating =
-info =
+longitude = -123.0320
+rating = 4.5
+info = Famous for the Golden Gate Bridge, Alcatraz Island, diverse neighborhoods, and its bohemian culture.
 
-13.Las Vegas
+13.Las Vegas -- ID 14 OK
 country_id = 4
 city_name = Las Vegas
 latitude = 36.2277
 longitude = -115.264
-rating =
-info =
+rating = 4.0
+info = Known for its dazzling entertainment, luxurious resorts, vibrant nightlife, and casinos that line the iconic Las Vegas Strip.
 
-14.Miami
+14.Miami -- ID 15 OK
 country_id = 4
 city_name = Miami
 latitude = 25.7751
 longitude = -80.2105
-rating =
-info =
+rating = 4.0
+info = A tropical paradise offering beautiful beaches, vibrant nightlife, trendy art districts like Wynwood, and a diverse culinary scene.
 
-15.Orlando
+15.Orlando -- ID 16 OK
 country_id = 4
 city_name = Orlando
 latitude = 28.4159
 longitude = -81.2988
-rating =
-info =
+rating = 4.0
+info = Home to numerous theme parks, including Walt Disney World, Universal Orlando Resort, and SeaWorld, making it a favorite destination for families.
 
 Mexico     -     ID 7
 
 Cidades:
 
-16.Cancun
+16.Cancun -- ID 17 OK
 country_id = 7
 city_name = Cancun
 latitude = 21.1743
 longitude = -86.8466
-rating =
-info =
+rating = 4.0
+info = Famous for its pristine white-sand beaches, crystal-clear turquoise waters, and vibrant nightlife.
 
-17.Mexico City
+17.Mexico City -- ID 18 OK
 country_id = 7
 city_name = Mexico City
 latitude = 19.4978
 longitude = -99.1269
-rating =
-info =
+rating = 4.5
+info = A bustling capital with rich history, stunning architecture, vibrant markets, and world-class museums like the National Museum of Anthropology.
 
-18.Oaxaca de Juarez
+18.Oaxaca de Juarez -- ID 19 OK
 country_id = 7
 city_name = Oaxaca de Juárez
 latitude = 17.0669
 longitude = -96.7203
-rating =
-info =
+rating = 4.0
+info = Known for its colonial architecture, colorful streets, traditional cuisine, and indigenous culture.
 
-19.Veracruz
+19.Veracruz -- ID 20 OK
 country_id = 7
 city_name = Veracruz
 latitude = -6.0442
 longitude = -35.4283
-rating =
-info =
+rating = 3.5
+info = A port city offering beautiful beaches, historic landmarks, and a lively atmosphere with music and dance.
 
-20.Taxco de Alarcón
+20.Taxco de Alarcón -- ID 21 OK 
 country_id = 7
 city_name = Taxco de Alarcón
 latitude = 18.5564
 longitude = -99.605
-rating =
-info =
+rating = 3.5
+info = A picturesque town renowned for its silver mining heritage, cobbled streets, and traditional Mexican charm.
 
 China      -     ID 8
 
 Cidades:
 
-21.Beijing
+21.Beijing -- ID 22 OK
 country_id = 8
 city_name = Beijing
 latitude = 39.9035
-longitude = 116.388
-rating =
-info =
+longitude = 116.3880
+rating = 4.5
+info = China's capital city, offering a blend of ancient history and modernity with attractions like the Great Wall, Forbidden City, Temple of Heaven, and vibrant street markets.
 
-22.Shanghai
+22.Shanghai -- ID 23 OK
 country_id = 8
 city_name = Shanghai
 latitude = 31.2323
-longitude = 121.469
-rating =
-info =
+longitude = 121.4690
+rating = 4.5
+info = A global financial hub known for its futuristic skyline, bustling waterfront promenade (the Bund), vibrant shopping districts, and a blend of modern and traditional architecture.
 
-23.Harbin
+23.Harbin -- ID 24 OK
 country_id = 8
 city_name = Harbin
 latitude = 45.6947
-longitude = 126.632
-rating =
-info =
+longitude = 126.6320
+rating = 4.0
+info =  Famous for its spectacular ice sculptures and the annual Ice and Snow Festival, showcasing intricate ice carvings and winter-themed activities.
 
-24.Xi'an
+24.Xi'an -- ID 25 OK
 country_id = 8
 city_name = Xi'an
 latitude = 34.1845
-longitude = 108.947
-rating =
-info =
+longitude = 108.9470
+rating = 4.0
+info = Home to the Terracotta Army, an awe-inspiring collection of ancient statues, and other historical sites such as the City Wall and the Giant Wild Goose Pagoda.
 
-25.Suzhou
+25.Suzhou -- ID 26 OK
 country_id = 8
 city_name = Suzhou
 latitude = 31.3041
 longitude = 120.5954
-rating =
-info =
+rating = 4.0
+info = Renowned for its classical Chinese gardens, serene canals, and historic architecture, offering a glimpse into traditional Chinese culture.
 
 
 Japan      -     ID 9 
 
 Cidades:
 
-26.Tokyo
+26.Tokyo -- ID 27 OK
 country_id = 9
 city_name = Tokyo
 latitude = 35.6894
-longitude = 139.692
-rating =
-info =
+longitude = 139.6920
+rating = 5.0
+info = A vibrant metropolis offering a blend of traditional and futuristic attractions, including historic temples, bustling street markets, cutting-edge technology, and diverse culinary delights.
 
-27.Kyoto
+27.Kyoto -- ID 28 OK
 country_id = 9
 city_name = Kyoto
 latitude = 35.0117
-longitude = 135.768
-rating =
-info =
+longitude = 135.7680
+rating = 4.5
+info =  Known for its beautifully preserved traditional architecture, serene Zen gardens, historic temples, and the iconic Fushimi Inari Shrine.
 
-28.Osaka
+28.Osaka -- ID 29 OK
 country_id = 9
 city_name = Osaka
 latitude = 34.6936
 longitude = 135.502
-rating =
-info =
+rating = 4.0
+info = A lively city famed for its vibrant street food scene, modern architecture, Universal Studios Japan, and the majestic Osaka Castle.
 
-29.Yokohama
+29.Yokohama -- ID 30 OK
 country_id = 9
 city_name = Yokohama
 latitude = 35.4333
 longitude = 139.633
-rating =
-info =
+rating = 4.0
+info =  Offers stunning waterfront views, a mix of modern and historic attractions like the Landmark Tower, Yokohama Chinatown, and vibrant shopping districts. 
 
-30.Hiroshima
+30.Hiroshima -- ID 31 OK
 country_id = 9
 city_name = Hiroshima
 latitude = 35.6894
-longitude = 139.692
-rating =
-info =
+longitude = 139.6920
+rating = 4.0
+info =  A city with a profound historical significance, home to the Peace Memorial Park and Museum, as well as the iconic Itsukushima Shrine on Miyajima Island.
 
 
 Canada     -     ID 10
 
 Cidades:
 
-31.Ottawa
+31.Ottawa -- ID 32 OK
 country_id = 10
 city_name = Ottawa
 latitude = 45.4208
-longitude = -75.69
-rating =
-info =
+longitude = -75.6900
+rating = 4.0
+info =  The capital city known for its impressive parliament buildings, cultural festivals, picturesque Rideau Canal, and numerous national museums.
 
-32.Montreal
+32.Montreal -- ID 33 OK
 country_id = 10
 city_name = Montreal
 latitude = -22.9035
 longitude = -43.2096
-rating =
-info =
+rating = 4.5
+info = A vibrant and multicultural city offering a blend of European charm and North American energy, known for its historic architecture, vibrant festivals, and world-class cuisine. 
 
-33.Quebec
+33.Quebec -- ID 34 OK
 country_id = 10
 city_name = Quebec
 latitude = 46.8127
 longitude = -71.2199
-rating =
-info =
+rating = 4.0
+info = Rich in history and French heritage, with a stunning old town (Vieux-Québec), cobblestone streets, and iconic attractions like the Château Frontenac.
 
-34.Vancouver
+34.Vancouver -- ID 35 OK
 country_id = 10
 city_name = Vancouver
 latitude = 49.3196
 longitude = -123.068
-rating =
-info =
+rating = 4.5
+info = Surrounded by breathtaking natural beauty, this coastal city offers a vibrant downtown, Stanley Park, diverse neighborhoods, and easy access to outdoor activities.
 
-35.Toronto
+35.Toronto -- ID 36 OK
 country_id = 10
 city_name = Toronto
 latitude = 43.7166
 longitude = -79.3407
-rating =
-info =
+rating = 4.0
+info = Canada's largest city, boasting iconic landmarks like the CN Tower, diverse neighborhoods, world-class museums, and a thriving arts and entertainment scene.
 
 France     -     ID 11
 
 Cidades:
 
-36.Biarritz
+36.Biarritz -- ID 37 OK
 country_id = 11
 city_name = Biarritz
 latitude = 43.4806
 longitude = -1.5667
-rating =
-info =
+rating = 4.0    
+info = A popular seaside resort town known for its beautiful beaches, renowned surfing spots, elegant architecture, and thalassotherapy centers.
 
-37.Lyon
+37.Lyon -- ID 38 OK
 country_id = 11
 city_name = Lyon
 latitude = 45.7589
 longitude = 4.8414
-rating =
-info =
+rating = 4.0
+info = Renowned for its gastronomy, historic old town (Vieux Lyon), and impressive Renaissance architecture, with the Basilica of Notre-Dame de Fourvière being a highlight.
 
-38.Paris
+38.Paris -- ID 39 OK
 country_id = 11
 city_name = Paris
 latitude = 48.8032
 longitude = 2.3511
-rating =
-info =
+rating = 5.0
+info = The "City of Lights" captivates with its iconic landmarks like the Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, charming neighborhoods, and artistic allure.
 
-39.Carcassonne
+39.Carcassonne -- ID 40 OK
 country_id = 11
 city_name = Carcassonne
 latitude = 43.2119
 longitude = 2.3532
-rating = 
-info =
+rating = 4.0
+info = A medieval fortress city with well-preserved ramparts, cobbled streets, and a fairytale-like atmosphere that transports visitors back in time.
 
-40.Nantes
+40.Nantes -- ID 41 OK
 country_id = 11
 city_name = Nantes
 latitude = 47.2188
 longitude = -1.55358
-rating =
-info =
+rating = 4.0
+info = Offers a unique blend of history and modernity, with attractions like the medieval Château des Ducs de Bretagne, Les Machines de l'île, and vibrant cultural scene.
 
 Spain      -     ID 12
 
 Cidades:
 
-41.Madrid
+41.Madrid -- ID 42 OK
 country_id = 12
 city_name = Madrid
 latitude = 40.4167
 longitude = -3.7032
-rating =
-info =
+rating = 4.5
+info = The vibrant capital known for its world-class museums like the Prado, stunning architecture, bustling markets, and lively nightlife.
 
-42.Barcelona
+42.Barcelona -- ID 43 OK
 country_id = 12
 city_name = Barcelona
 latitude = 41.3902
 longitude = 2.1540
-rating =
-info =
+rating = 5.0
+info = Famed for its unique architecture, including the works of Antoni Gaudí like the Sagrada Família and Park Güell, along with beautiful beaches and a vibrant food scene. 
 
-43.Seville
+43.Seville -- ID 44 OK
 country_id = 12
 city_name = Seville
 latitude = 37.4195
 longitude = -5.8945
-rating =
-info =
+rating = 4.5
+info = A city of flamenco, bullfighting, and stunning Moorish architecture, featuring the grand Alcázar palace, Seville Cathedral, and the iconic Plaza de España.
 
-44.Málaga
+44.Málaga -- ID 45 OK
 country_id = 12
 city_name = Málaga
 latitude = 36.7196
 longitude = -4.4200
-rating =
-info =
+rating = 4.0
+info = Known for its sunny Mediterranean beaches, rich history, vibrant cultural scene, and being the birthplace of Pablo Picasso. 
 
-45.Valencia
+45.Valencia -- ID 46 OK
 country_id = 12
 city_name = Valencia
 latitude = 39.4702
 longitude = -0.3768
-rating =
-info =
+rating = 4.0
+info = Combining modern architecture (City of Arts and Sciences) with a historic old town, beautiful beaches, and a famous culinary specialty, paella.
 
 
 Italy      -     ID 13
 
 Cidades:
 
-46.Rome
+46.Rome -- ID 47
 country_id = 13
 city_name = Rome
 latitude = 41.8905
 longitude = 12.4942
-rating =
-info =
+rating = 4.5
+info = Rome, the eternal city, is a treasure trove of history, culture, and iconic landmarks. Visitors can explore ancient ruins like the Colosseum and Roman Forum, marvel at the magnificent Vatican City and St. Peter's Basilica, and toss a coin into the Trevi Fountain for good luck. The city's vibrant atmosphere, delicious cuisine, and charming streets make it an unforgettable destination.
 
-47.Florence
+47.Florence -- ID 48
 country_id = 13
 city_name = Florence
 latitude = 43.7687
 longitude = 11.2569
-rating =
-info =
+rating = 4.5
+info = Known as the birthplace of the Renaissance, Florence boasts stunning architecture, world-class art galleries, and a rich cultural heritage. Visitors can admire masterpieces at the Uffizi Gallery, marvel at the iconic Duomo and Brunelleschi's dome, and stroll along the picturesque Ponte Vecchio. Florence's charming streets, delectable cuisine, and welcoming locals create a truly enchanting experience.
 
-48.Sienna
+48.Siena -- ID 49
 country_id = 13
-city_name = Sienna
+city_name = Siena
 latitude = 43.3187
 longitude = 11.3305
-rating =
-info =
+rating = 4.0
+info = Siena, a medieval gem in the heart of Tuscany, captivates visitors with its well-preserved historic center and vibrant traditions. The stunning Piazza del Campo, home to the thrilling Palio horse race, is a must-visit. Siena Cathedral, with its breathtaking facade and intricate interior, leaves visitors in awe. The city's warm atmosphere, delicious food, and impressive architecture make it a hidden treasure.
 
-49.Venice
+49.Venice -- ID 50
 country_id = 13
 city_name = Venice
 latitude = 45.4343
 longitude = 12.3388
-rating =
-info =
+rating = 5.0
+info = Venice, the romantic floating city, is famous for its picturesque canals, gondolas, and charming bridges. Visitors can explore St. Mark's Square, visit the awe-inspiring Doge's Palace, and take a gondola ride along the winding waterways. Getting lost in Venice's narrow streets and stumbling upon hidden gems is part of the enchanting experience. Its unique beauty and romantic ambiance make it a dream destination.
 
-50.Naples
+50.Naples -- ID 51
 country_id = 13
 city_name = Naples
 latitude = 40.8401
 longitude = 14.2516
-rating =
-info =
+rating = 4.0
+info = Naples, a vibrant city in southern Italy, offers a fascinating mix of history, culture, and mouthwatering cuisine. The city is renowned for its ancient ruins at Pompeii and Herculaneum, as well as its proximity to the breathtaking Amalfi Coast. Visitors can savor authentic Neapolitan pizza, explore the lively streets of Spaccanapoli, and soak in the city's lively atmosphere. Naples provides a lively and authentic Italian experience.
 
 United Kingdom - ID 14
 
 Cidades:
 
-51.London
+51.London -- ID 52
 country_id = 14
 city_name = London
 latitude = 51.5072
 longitude = -0.1275
-rating =
-info =
+rating = 4.5
+info = London, the dynamic capital of the United Kingdom, is a bustling metropolis that seamlessly blends tradition with modernity. Visitors can marvel at world-famous landmarks like the Tower of London, Buckingham Palace, and the British Museum. The city offers a vibrant theater scene in the West End, diverse culinary experiences, and excellent shopping opportunities. London's rich history, cosmopolitan atmosphere, and cultural diversity make it a top destination.
 
-52.Edinburgh
+52.Edinburgh -- ID 53
 country_id = 14
 city_name = Edinburgh
 latitude = 55.9494
 longitude = -3.1602
-rating =
-info =
+rating = 4.5
+info = Edinburgh, Scotland's historic capital, exudes charm and grandeur with its medieval Old Town and elegant Georgian New Town. Visitors can explore the iconic Edinburgh Castle, walk along the Royal Mile, and hike up Arthur's Seat for panoramic views. The city is renowned for its festivals, including the famous Edinburgh Festival Fringe. Edinburgh's captivating beauty, lively atmosphere, and rich cultural heritage make it a must-visit destination.
 
-53.Belfast
+53.Belfast -- ID 54
 country_id = 14
 city_name = Belfast
 latitude = 54.5939
 longitude = -5.9294
-rating =
-info =
+rating = 4.0
+info = Belfast, the vibrant capital of Northern Ireland, offers a captivating blend of history, culture, and natural beauty. Visitors can delve into the city's troubled past at the Titanic Belfast museum, admire the stunning murals in the Cathedral Quarter, and explore the picturesque Giant's Causeway along the stunning Causeway Coastal Route. Belfast's friendly locals, buzzing nightlife, and thriving arts scene make it a city full of surprises.
 
-54.Liverpool
+54.Liverpool -- ID 55
 country_id = 14
 city_name = Liverpool
 latitude = 53.4000
 longitude = -2.9830
-rating =
-info =
+rating = 4.5
+info = Liverpool, the hometown of The Beatles, is a city steeped in music history and cultural heritage. Visitors can visit The Beatles Story museum, explore the vibrant Albert Dock area, and soak in the lively atmosphere of the Cavern Club. Liverpool also offers impressive architecture, including the iconic Liver Building, and world-class museums and galleries. Its energetic vibe, musical legacy, and friendly locals make it a unique destination.
 
-55.Manchester
+55.Manchester -- ID 56
 country_id = 14
 city_name = Manchester
 latitude = 53.4839
 longitude = -2.2446
-rating =
-info =
+rating = 4.0
+info = Manchester, a vibrant city in northern England, combines industrial heritage with a thriving arts and music scene. Visitors can explore the revitalized Salford Quays, visit the interactive Museum of Science and Industry, and catch a football match at Old Trafford or Etihad Stadium. Manchester offers a diverse culinary scene, excellent shopping opportunities, and lively nightlife. Its cultural richness, sporting passion, and warm hospitality make it a city worth exploring.
 
 Germany     -    ID 15
 
 Cidades:
 
-56.Berlin
+56.Berlin -- ID 57
 country_id = 15
 city_name = Berlin
 latitude = 52.5186
 longitude = 13.4081
-rating =
-info =
+rating = 4.5
+info = A dynamic and cosmopolitan city offering a mix of history, art, and vibrant nightlife, with landmarks like the Brandenburg Gate and the Berlin Wall.
 
-57.Munich
+57.Munich -- ID 58
 country_id = 15
 city_name = Munich
 latitude = 48.1369
 longitude = 11.5753
-rating =
-info =
+rating = 4.0
+info = Famous for its Oktoberfest celebration, Bavarian charm, historic architecture, including the Nymphenburg Palace, and world-class museums.
 
-58.Heidelberg
+58.Heidelberg -- ID 59
 country_id = 15
 city_name = Heidelberg
 latitude = 49.4122
 longitude = 8.7100
-rating =
-info =
+rating = 4.0
+info = A romantic city known for its picturesque castle ruins, the historic old town, and the oldest university in Germany. 
 
-59.Nuremberg
+59.Nuremberg -- ID 60
 country_id = 15
 city_name = Nuremberg
 latitude = 49.4528
 longitude = 11.0778
-rating =
-info =
+rating = 4.0
+info = Rich in history, with attractions such as the Imperial Castle, the historic old town, and the Documentation Center Nazi Party Rally Grounds.
 
-60.Hamburg
+60.Hamburg -- ID 61
 country_id = 15
 city_name = Hamburg
 latitude = 53.5506
 longitude = 9.99333
-rating =
-info =
-
-12 ITEMS
-
-
+rating = 4.0
+info = A vibrant port city with a maritime atmosphere, offering attractions like the Speicherstadt, HafenCity, and a lively entertainment scene.
