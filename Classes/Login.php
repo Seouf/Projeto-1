@@ -15,9 +15,14 @@ class User {
   }
 
   public static function isLoggedIn() {
-    session_start();
-    return isset($_SESSION['username']);
-  }
+    if (isset($_SESSION['username'])) {
+        return true;
+    } elseif (basename($_SERVER['PHP_SELF']) !== 'login.php') {
+        header('Location: login.php');
+        exit();
+    }
+    return false;
+}
 
   public static function logout() {
     session_start();

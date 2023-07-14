@@ -37,6 +37,7 @@ Class City
             $city["info"]?? null
         );
     }
+
     public static function array($cities)
     {
         $result = [];
@@ -46,10 +47,66 @@ Class City
         }
         return $result;
     }
-    public static function getCountryName($db)
+
+    public static function getCountryName($db,$city)
     {
-    $result = $db->instance->query("SELECT countries.country_name FROM cities AS cities JOIN countries AS countries ON cities.country_id = countries.country_id");
-    return $result;
+        $sql = "SELECT countries.country_name FROM cities JOIN countries ON cities.country_id = countries.country_id WHERE cities.city_id = :city_id;"; //primo deu uma força amem
+        $query = $db->instance->prepare($sql);
+        $query->bindParam(':city_id', $city->city_id, PDO::PARAM_INT);
+        $query->execute();
+        $cname = $query->fetch(PDO::FETCH_ASSOC);
+        $cname = $cname['country_name'];
+        return $cname;
+    }
+
+    public static function getFilterCities($db,$countryId) 
+    {
+        $sql = "SELECT * FROM cities WHERE country_id = :country_id";
+        $query = $db->instance->prepare($sql);
+        $query->bindParam(':country_id', $countryId, PDO::PARAM_INT);
+        $query->execute();
+        $result = $query->fetchAll(PDO::FETCH_ASSOC);
+        return City::array($result);
+    }
+
+    public static function getCityById($db,$id)
+    {
+        $query = $db->instance->query("SELECT * FROM `cities` WHERE `id`='$id'");
+        $city = $query->fetch();
+        $city=City::parse($city);
+    }
+
+    public static function getRatingById($db,$city)
+    {
+    $sql = "SELECT ROUND(AVG(rating),0) FROM ratings JOIN cities ON ratings.city_id = cities.city_id WHERE cities.city_id = :city_id;";
+    $query = $db->instance->prepare($sql);
+    $query->bindParam(':city_id', $city->city_id, PDO::PARAM_INT);
+    $query->execute();
+    $crate = $query->fetch(PDO::FETCH_ASSOC);
+    $crate = $crate['ROUND(AVG(rating),0)'];
+    return $crate;
+    }
+
+    public static function getTumbnailById($db,$city)
+    {
+        $sql = "SELECT city_images.url FROM city_images JOIN cities ON city_images.city_id = cities.city_id WHERE cities.city_id = :city_id LIMIT 1;";
+        $query = $db->instance->prepare($sql);
+        $query->bindParam(':city_id', $city->city_id, PDO::PARAM_INT);
+        $query->execute();
+        $cityimage = $query->fetch(PDO::FETCH_ASSOC);
+        $cityimage = $cityimage['url'] ?? NULL;
+        return $cityimage;
+    }
+
+    public static function getImagesById($db,$city)
+    {
+        $sql = "SELECT city_images.url FROM city_images JOIN cities ON city_images.city_id = cities.city_id WHERE cities.city_id = :city_id;";
+        $query = $db->instance->prepare($sql);
+        $query->bindParam(':city_id', $city->city_id, PDO::PARAM_INT);
+        $query->execute();
+        $cityimage = $query->fetch(PDO::FETCH_ASSOC);
+        $cityimage = $cityimage['url'];
+        return $cityimage;
     }
 }
 ?>

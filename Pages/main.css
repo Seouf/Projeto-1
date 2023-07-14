@@ -12,8 +12,9 @@
 
 #content{
     height:100%;
-    width:79%;
+    width:60%;
     float: left;
+    margin:auto;
 }
 
 .cities{
@@ -28,4 +29,38 @@
 
 ul{
     list-style-type: none;
+}
+
+.imagediv{
+    text-align: center;
+}
+.tumbnail{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 1em;
+}
+
+body{
+    background-color: grey;
+}
+
+.textcontainer{
+    padding-left:10px;
+}
+
+#side-bar{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    margin:20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+}
+
+#countrylistdiv{
+    padding-top:20px;
 }

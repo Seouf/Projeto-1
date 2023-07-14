@@ -1,9 +1,7 @@
 <!DOCTYPE html>
  <?php
   session_start();
-    session_unset();
-    session_destroy();
-    session_start();
+
           include_once("../Classes/Database.php");
           include_once("../Classes/Login.php");
 
