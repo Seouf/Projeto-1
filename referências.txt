@@ -1,6 +1,5 @@
 REFERÊNCIAS CÓDIGOS:
  autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values 
- doctype HTML: https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode
  request method: https://cursos.alura.com.br/forum/topico-uso-do-_server-request_method-251356
 REFERÊNCIAS PDO:
 PDO - Cadastro / User = https://pastebin.com/jF92225P
