@@ -15,6 +15,21 @@ if (!User::isLoggedIn()){
     header('Location: login.php');
     exit();
 }
+
+$sortOrder = 'ASC';
+if (isset($_POST['sort_order'])) {
+    $sortOrder = $_POST['sort_order'];
+
+    setcookie('sort_order', $sortOrder, [
+        'expires' => time() +(86400),
+        'path' => '/',
+        'SameSite' => 'Lax',
+    ]);
+
+} elseif (isset($_COOKIE['sort_order'])) {
+    $sortOrder = $_COOKIE['sort_order'];
+}
+
 $countries = Country::getAllCountries($db);
 $execute = count($_GET);
 ?>
@@ -24,78 +39,60 @@ $execute = count($_GET);
         <link rel="stylesheet" type="text/css" href="main.css" />
     </head>
     <body>
+        <?php include_once("../includes/navbar.php"); ?>
         <div id="main-content">
             <div id="side-bar">
+                <div id="order-selectdiv">
+                    <form method="POST" action="">
+                        <label for="sort_order">Sort Order:</label>
+                        <select name="sort_order" id="sort_order" onchange="this.form.submit()"> <!-- https://stackoverflow.com/a/7231215 !-->
+                            <option value="ASC" <?php if ($sortOrder === 'ASC') echo 'selected'; ?>>Ascending</option>
+                            <option value="DESC" <?php if ($sortOrder === 'DESC') echo 'selected'; ?>>Descending</option>
+                        </select>
+                        <noscript><input type="submit" value="Submit"></noscript> <!-- https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/noscript !-->
+                    </form>
+                </div>
                 <?php 
                 if ($execute){ ?>
                 <a href = "main.php">Remove Filter </a>
                 <?php } ?>
                 <div id=countrylistdiv>
-                <input type="text" name="filtro" id="filtro" placeholder= "Filter..." />
-                <ul id="country-list">
-                <?php foreach ($countries as $country){ ?>
+                    <input type="text" name="filtro" id="filtro" placeholder= "Filter..." />
+                    <ul id="country-list">
+                    <?php foreach ($countries as $country){ ?>
                     <li><a href="main.php?id=<?= $country->country_id ?>"><?= $country->country_name ?></a></li>
                     <?php } ?>
-                </ul>
-            </div>
+                    </ul>
+                </div>
             </div>
             <div id="content">
                 <?php
-                if (!$execute) { $cities = City::getAllCities($db);
-                 foreach ($cities as $city) { ?>
-                <div class = 'cities'>
-                <div class='textcontainer'>
-                <h2> <a href='city.php?id=<?= $city->city_id ?>'> <?= $city->city_name ?> </a></h2>
-                <p>Country: <?= City::getCountryName($db,$city) ?> </p>
-                <p>Latitude: <?= $city->latitude ?> </p>
-                <p>Longitude: <?= $city->longitude ?> </p>
-                <p>Rating: <span class="rating"> <?= City::getRatingById($db,$city) ?> </span></p>
-                </div>
-                <div class=imagediv><img class="tumbnail" src=<?= City::getTumbnailById($db,$city) ?> width="600" height="300"/> </div> 
-                <br />   
-                </div>
-                <br />
-                <?php }} else { 
-                $countryId = $_GET['id'];
-                $cities = City::getFilterCities($db,$countryId);
+
+                if ($execute && isset($_GET['id'])) {
+                    $countryId = $_GET['id'];
+                    $cities = City::getFilterCities($db, $countryId,$sortOrder);
+                } else {
+                    $cities = City::getAllCities($db,$sortOrder);
+                }
+
                 foreach ($cities as $city) { ?>
-                <div class = 'cities'>
-                <div class='textcontainer'>
-                <h2> <a href='city.php?id=<?= $city->city_id ?>'> <?= $city->city_name ?> </a></h2>
-                <p>Country: <?= City::getCountryName($db,$city) ?> </p>
-                <p>Latitude: <?= $city->latitude ?> </p>
-                <p>Longitude: <?= $city->longitude ?> </p> 
-                <p>Rating: <span class="rating"> <?= City::getRatingById($db,$city) ?> </span></p> </div>
-                <div class=imagediv><img class="tumbnail" src=<?= City::getTumbnailById($db,$city) ?> width="600" height="300"/> </div> 
-                <br /> </div> <br />
-                <?php }} ?>
+                    <div class = 'cities'>
+                        <div class='textcontainer'>
+                            <h2> <a href='city.php?id=<?= $city->city_id ?>'> <?= $city->city_name ?> </a></h2>
+                            <p>Country: <?= City::getCountryName($db,$city) ?> </p>
+                            <p>Latitude: <?= $city->latitude ?> </p>
+                            <p>Longitude: <?= $city->longitude ?> </p>
+                            <p>Rating: <span class="rating"> <?= City::getRatingById($db,$city) ?> </span></p>
+                        </div>
+                        <div class=imagediv><img class="thumbnail" src=<?= City::getThumbnailById($db,$city) ?> width="600" height="300"/> 
+                        </div> <br />   
+                    </div>
+                    <br />
+                <?php } ?>
             </div>
         </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="text/javascript">
-            
-            var input = document.getElementById('filtro');
-            var countryList = document.getElementById('country-list');
-
-
-            input.addEventListener('input', function() { //eventlistener referência do primo
-                var filterValue = input.value.toLowerCase();
-                var countries = countryList.getElementsByTagName('li');
-
-
-                for (var i = 0; i < countries.length; i++) {
-                    var country = countries[i];
-                    var countryName = country.textContent.toLowerCase();
-                    if (countryName.includes(filterValue)) {
-                        country.style.display = 'block'; //block e includes referência do primo
-                    } else {
-                        country.style.display = 'none';
-                    }
-                }
-            });
-            </script>
+        <script src="script.js"></script>
     </body>
 </html>
+
+

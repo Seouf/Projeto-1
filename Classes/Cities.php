@@ -20,8 +20,10 @@ Class City
         $this->info = $info;
     }
 
-    public static function getAllCities($db){
-        $result = $db->instance->query("SELECT * FROM `cities`")->fetchAll();
+    public static function getAllCities($db,$sortOrder){
+        $sql = "SELECT * FROM cities ORDER BY city_name $sortOrder";
+        $query = $db->instance->query($sql);
+        $result = $query->fetchAll(PDO::FETCH_ASSOC);
         return City::array($result);
     }
 
@@ -59,9 +61,9 @@ Class City
         return $cname;
     }
 
-    public static function getFilterCities($db,$countryId) 
+    public static function getFilterCities($db,$countryId,$sortOrder) 
     {
-        $sql = "SELECT * FROM cities WHERE country_id = :country_id";
+        $sql = "SELECT * FROM cities WHERE country_id = :country_id ORDER BY city_name $sortOrder";
         $query = $db->instance->prepare($sql);
         $query->bindParam(':country_id', $countryId, PDO::PARAM_INT);
         $query->execute();
@@ -71,9 +73,10 @@ Class City
 
     public static function getCityById($db,$id)
     {
-        $query = $db->instance->query("SELECT * FROM `cities` WHERE `id`='$id'");
+        $query = $db->instance->query("SELECT * FROM `cities` WHERE `city_id`='$id'");
         $city = $query->fetch();
         $city=City::parse($city);
+        return $city;
     }
 
     public static function getRatingById($db,$city)
@@ -87,7 +90,7 @@ Class City
     return $crate;
     }
 
-    public static function getTumbnailById($db,$city)
+    public static function getThumbnailById($db,$city)
     {
         $sql = "SELECT city_images.url FROM city_images JOIN cities ON city_images.city_id = cities.city_id WHERE cities.city_id = :city_id LIMIT 1;";
         $query = $db->instance->prepare($sql);
@@ -98,15 +101,14 @@ Class City
         return $cityimage;
     }
 
-    public static function getImagesById($db,$city)
+    public static function insertRatingById($db,$city,$rating)
     {
-        $sql = "SELECT city_images.url FROM city_images JOIN cities ON city_images.city_id = cities.city_id WHERE cities.city_id = :city_id;";
+        $sql= "INSERT INTO `ratings`(`city_id`,`rating`) VALUES (:city_id , :rating)";
         $query = $db->instance->prepare($sql);
-        $query->bindParam(':city_id', $city->city_id, PDO::PARAM_INT);
-        $query->execute();
-        $cityimage = $query->fetch(PDO::FETCH_ASSOC);
-        $cityimage = $cityimage['url'];
-        return $cityimage;
+        $query->bindParam(':city_id',$city->city_id, PDO::PARAM_INT);
+        $query->bindParam(':rating',$rating, PDO::PARAM_INT);
+        return $query->execute();
     }
+
 }
 ?>

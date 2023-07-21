@@ -5,7 +5,7 @@
           include_once("../Classes/Database.php");
           include_once("../Classes/Login.php");
 
-          if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+          if ($_SERVER['REQUEST_METHOD'] === 'POST') { //https://cursos.alura.com.br/forum/topico-uso-do-_server-request_method-251356
             $username = $_POST['username'];
             $password = $_POST['password'];
           
@@ -23,20 +23,20 @@
     ?>
     
 <html>
-<head>
-  <title>Login</title>
-</head>
-<body>
-  <h1>Login</h1>
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login</h1>
 
-  <form method="POST" action="">
-    <label for="loginuserinput">Username:</label>
-    <input type="text" id="loginuserinput" name="username" autocomplete="username" required><br> 
-    <label for="passworduserinput">Password:</label>
-    <input type="password" id="passworduserinput" name="password" autocomplete="current-password" required><br>
-    <input type="submit" value="Log in">
-  </form>
-</body>
+    <form method="POST" action="">
+      <label for="loginuserinput">Username:</label>
+      <input type="text" id="loginuserinput" name="username" autocomplete="username" required><br> 
+      <label for="passworduserinput">Password:</label>
+      <input type="password" id="passworduserinput" name="password" autocomplete="current-password" required><br> <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values  !-->
+      <input type="submit" value="Log in">
+    </form>
+  </body>
 </html>
 
     
