@@ -1,7 +1,0 @@
-REFERÊNCIAS CÓDIGOS:
- autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values 
- request method: https://cursos.alura.com.br/forum/topico-uso-do-_server-request_method-251356
-REFERÊNCIAS PDO:
-PDO - Cadastro / User = https://pastebin.com/jF92225P
-PDO - Foreign Key = https://pastebin.com/7P0qCzxB
-PDO - Insert = https://pastebin.com/Epbe898m
